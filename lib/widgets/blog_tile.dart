@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class BlogTile extends StatelessWidget {
@@ -17,7 +18,7 @@ class BlogTile extends StatelessWidget {
       padding: EdgeInsets.only(top: 10, bottom: 10),
       child: Column(
         children: [
-          Image.network(imageUrl),
+          CachedNetworkImage(imageUrl: imageUrl),
           Text(title),
           Text(description),
         ],

@@ -3,12 +3,12 @@ import 'dart:convert';
 import 'package:flutter_news_app/models/article_model.dart';
 import 'package:http/http.dart' as http;
 
-class News {
+class CategoryNews {
   List<ArticleModel> newsFromArticleModel = [];
 
-  Future<void> getNews() async {
+  Future<void> getNews(String category) async {
     String url =
-        "http://newsapi.org/v2/top-headlines?country=us&apiKey=912d1d613be84c7498e3216308ae3895";
+        "http://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=912d1d613be84c7498e3216308ae3895";
 
     var response = await http.get(url);
 

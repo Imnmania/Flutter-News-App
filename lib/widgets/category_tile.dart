@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_news_app/views/category_views.dart';
 
 class CategoryTile extends StatelessWidget {
   final imageUrl;
@@ -10,7 +11,6 @@ class CategoryTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
       child: Container(
         margin: EdgeInsets.only(right: 10),
         child: Stack(
@@ -43,6 +43,16 @@ class CategoryTile extends StatelessWidget {
           ],
         ),
       ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CategoryView(
+              categoryName: categoryName,
+            ),
+          ),
+        );
+      },
     );
   }
 }

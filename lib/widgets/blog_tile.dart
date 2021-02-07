@@ -18,9 +18,30 @@ class BlogTile extends StatelessWidget {
       padding: EdgeInsets.only(top: 10, bottom: 10),
       child: Column(
         children: [
-          CachedNetworkImage(imageUrl: imageUrl),
-          Text(title),
-          Text(description),
+          ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: CachedNetworkImage(imageUrl: imageUrl)),
+          SizedBox(
+            height: 5,
+          ),
+          Text(
+            title,
+            style: TextStyle(
+              color: Colors.blue[900],
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          Text(
+            description,
+            style: TextStyle(
+              color: Colors.black54,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ],
       ),
     );

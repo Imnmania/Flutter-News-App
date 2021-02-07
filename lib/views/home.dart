@@ -67,6 +67,7 @@ class _HomeState extends State<Home> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
+                      physics: BouncingScrollPhysics(),
                       itemCount: categories.length,
                       itemBuilder: (context, index) {
                         return CategoryTile(
@@ -82,6 +83,7 @@ class _HomeState extends State<Home> {
                     child: ListView.builder(
                       shrinkWrap: true,
                       scrollDirection: Axis.vertical,
+                      physics: BouncingScrollPhysics(),
                       itemCount: articles.length,
                       itemBuilder: (context, index) {
                         return BlogTile(

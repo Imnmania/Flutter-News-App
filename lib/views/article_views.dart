@@ -33,6 +33,12 @@ class _ArticleViewState extends State<ArticleView> {
                 color: Colors.blue,
               ),
             ),
+            Text(
+              'App',
+              style: TextStyle(
+                color: Colors.red,
+              ),
+            ),
           ],
         ),
         actions: [

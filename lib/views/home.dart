@@ -50,6 +50,12 @@ class _HomeState extends State<Home> {
                 color: Colors.blue,
               ),
             ),
+            Text(
+              'App',
+              style: TextStyle(
+                color: Colors.red,
+              ),
+            ),
           ],
         ),
       ),

@@ -49,6 +49,12 @@ class _CategoryViewState extends State<CategoryView> {
                 color: Colors.blue,
               ),
             ),
+            Text(
+              'App',
+              style: TextStyle(
+                color: Colors.red,
+              ),
+            ),
           ],
         ),
         actions: [

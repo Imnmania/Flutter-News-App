@@ -2,6 +2,10 @@
 
 A Flutter News application using news.org api.
 
+<p align="center">
+<img src="https://i.imgur.com/RK8fnJ5.png" alt="Screenshot">
+</p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

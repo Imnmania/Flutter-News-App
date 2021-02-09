@@ -3,7 +3,7 @@
 A Flutter News application using news.org api.
 
 <p align="center">
-<img src="https://i.imgur.com/RK8fnJ5.png" alt="Screenshot">
+<img src="https://i.imgur.com/RK8fnJ5.png" alt="Screenshot" width="450">
 </p>
 
 ## Getting Started
